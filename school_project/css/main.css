@@ -1,0 +1,153 @@
+:root{
+    --icons-color:rgb(255, 153, 0), rgb(26, 23, 23);
+    --white-color:#fff;
+}
+ul.navbar-nav.mx-auto {
+    display: contents;
+}
+
+/* Custom Styles */
+.glass-overlay {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(226, 228, 245, 0.664);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .user-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: transparent;
+    padding: 5px; /* Adjust as needed */
+  }
+
+
+  .bell-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.bell-icon .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: var(--white-color);
+    border-radius: 50%;
+    padding: 3px 6px;
+    font-size: 10px;
+}
+
+.bell-icon i {
+    font-size: 25px;
+    background-image: linear-gradient(to right, var(--icons-color));
+    -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+}
+.user_Wrapper {
+    column-gap: 5px;
+}
+.user_name > div {
+    column-gap: 10px;
+}
+
+  .user_Wrapper h5,
+  .user_Wrapper h6 {
+    font: 600;
+    padding: 0;
+    margin: 0;
+  }
+  .user_Wrapper h5{
+    font-size: 16px;
+  }
+  .user_Wrapper h6{
+    font-size: 14px;
+  }
+  /* .user_name > div{} */
+      
+      .banner-section {
+        width: 100%;
+        height: 300px; /* Adjust height as needed */
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-image: fill 0 linear-gradient(#fff1, #fff);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        animation: changeBackground 10s infinite; /* Change every 10 seconds */
+      }
+      
+      @keyframes changeBackground {
+        0% { background-image:  url(../images/banner2.jpg); }
+        33% { background-image:  url(../images/banner3.jpg) }
+        66% { background-image:  url(../images/banner4.jpg) }
+        100% { background-image:  url(../images/banner5.jpg) } /* Back to the first image */
+      }
+
+      /* cards Styles */
+      .card {
+        /* background-color: #f8f9fa; */
+        border-radius: 10px;
+        /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+        padding: 10px;
+        margin-bottom: 10px;
+        /* border: 1px solid rgba(0, 0, 0, 0.3); */
+        text-align: center;
+      }
+  
+      
+      .card h2 {
+        font-size: 0.7rem;
+        margin-top: 0;
+        letter-spacing: -0.5px;
+    }
+  
+    /* .card .bi {
+        font-size: 35px;
+        color: linear-gradient(to bottom, yellow, rgb(17, 17, 16));
+    } */
+    .card .bi {
+        font-size: 35px;
+        background-image: linear-gradient(to right, var(--icons-color));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    .card_wrapper .col-4{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+      .main{
+        /* background-color: rgb(250, 246, 246); */
+        min-height: 100vh;
+        /* background:linear-gradient(90deg, rgba(160,233,237,1) 0%, rgba(214,243,244,1) 56%, rgba(230,232,232,1) 95%, rgba(244,244,244,1) 100%); */
+        background-image: url(../images/onbject_bg3.png);
+        background-size: cover ;
+
+
+      }
+      #particles-js {
+        max-height: 150px; /* Adjust the value as needed */
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+
+/* navbar */
+
+
+    .navbar-nav .nav-item.active {
+        border-top: 2px solid white; /* Change the border color or size as needed */
+        transform: scale(1.3);
+      }
+
+      .navbar{
+        border-top-left-radius: 15%;
+        border-top-right-radius: 15%;
+      }
+     /*  */
