@@ -181,3 +181,9 @@ ul.navbar-nav.mx-auto {
       .card_wrapper .card h2 {
         margin-top: 10px;
       }
+
+ @media  (min-width:500px){
+        .main{
+            background: white;
+        }
+      }
